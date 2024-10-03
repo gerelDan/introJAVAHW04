@@ -42,6 +42,15 @@ public class Main {
         DequeTask dt = new DequeTask();
         dt.rotateDeque(deque, n);
         System.out.println(deque);
+        Deque<String> deq = new LinkedList<>();
+        deq.add("apple");
+        deq.add("banana");
+        deq.add("apple");
+        deq.add("cherry");
+        value = "apple";
+        System.out.println(deq);
+        dt.removeAllOccurrences(deq, value);
+        System.out.println(deq);
 
     }
 

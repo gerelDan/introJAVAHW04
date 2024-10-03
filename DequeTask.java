@@ -19,4 +19,12 @@ public class DequeTask {
             }
         }
     }
+    /*
+    Реализуйте метод removeAllOccurrences в классе DequeTasks, который
+принимает Deque<String> и строку value. Метод должен удалить все
+вхождения строки value из очереди.
+     */
+    public void removeAllOccurrences(Deque<String> deque, String value){
+        deque.removeIf(n -> (n.equals(value)));
+    }
 }
