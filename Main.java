@@ -1,3 +1,4 @@
+import java.util.Deque;
 import java.util.LinkedList;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
@@ -31,6 +32,17 @@ public class Main {
         ListUtils ls = new ListUtils();
         System.out.println(list);
         System.out.println(ls.countOccurrences(list, value));
+        Deque<Integer> deque = new LinkedList<>();
+        deque.add(1);
+        deque.add(2);
+        deque.add(3);
+        deque.add(4);
+        int n = 2;
+        System.out.println(deque);
+        DequeTask dt = new DequeTask();
+        dt.rotateDeque(deque, n);
+        System.out.println(deque);
+
     }
 
 /*
