@@ -10,9 +10,7 @@ public class Main {
         ll.add("pear");
         ll.add("grape");
         removeOddLengthStrings(ll);
-        for (String s : ll) {
-            System.out.println(s);
-        }
+        System.out.println(ll);
         MyStack ms = new MyStack();
         ms.push("asdfas");
         ms.push("sdafasfd");
@@ -22,7 +20,17 @@ public class Main {
         System.out.println(ms.pop());
         System.out.println(ms);
         ms.pop();
-        ms.pop();
+        String value = "apple";
+        LinkedList<String> list = new LinkedList<>();
+        list.add("apple");
+        list.add("banana");
+        list.add("apple");
+        list.add("pear");
+        list.add("banana");
+
+        ListUtils ls = new ListUtils();
+        System.out.println(list);
+        System.out.println(ls.countOccurrences(list, value));
     }
 
 /*
