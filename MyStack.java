@@ -13,19 +13,19 @@ public class MyStack {
     private LinkedList<String> myStack = new LinkedList<>();
 
     public void push(String e){
-        this.myStack.add(e);
+        this.myStack.addFirst(e);
     }
     private boolean isEmpty(){
         return this.myStack.isEmpty();
     }
     public String peek(){
-        return this.myStack.getLast();
+        return this.myStack.getFirst();
     }
     public String pop(){
         if (this.myStack.isEmpty()) throw new RuntimeException("Stack is empty"); //return null;
-        String res = this.myStack.peek();
-        this.myStack.remove(myStack.size()-1);
-        return res;
+//        String res = this.myStack.peek();
+//        this.myStack.remove(myStack.size()-1);
+        return myStack.removeFirst();
     }
     public LinkedList<String> getElements(){
         return this.myStack;
