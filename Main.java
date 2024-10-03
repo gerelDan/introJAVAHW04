@@ -13,6 +13,16 @@ public class Main {
         for (String s : ll) {
             System.out.println(s);
         }
+        MyStack ms = new MyStack();
+        ms.push("asdfas");
+        ms.push("sdafasfd");
+        System.out.println(ms);
+        System.out.println(ms.peek());
+        System.out.println(ms);
+        System.out.println(ms.pop());
+        System.out.println(ms);
+        ms.pop();
+        ms.pop();
     }
 
 /*
@@ -27,4 +37,5 @@ removeOddLengthStrings класса LLTasks реализуйте удалени�
 //            if (list.removeIf())
 //        }
     }
+
 }
